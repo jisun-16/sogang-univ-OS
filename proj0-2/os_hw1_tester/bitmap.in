@@ -1,0 +1,26 @@
+create bitmap bm0 16
+dumpdata bm0 //0000000000000000
+
+bitmap_mark bm0 0 
+bitmap_any bm0 0 1 // true/false
+bitmap_expand bm0 2
+
+bitmap_set bm0 0 true
+bitmap_set_all bm0 false
+bitmap_set_multiple bm0 0 4 true
+bitmap_flip bm0 4
+bitmap_none bm0 0 1
+
+bitmap_reset bm0 0 
+bitmap_scan bm0 0 1 true
+bitmap_scan_and_flip bm0 0 1 true
+bitmap_test bm0 4
+
+bitmap_all bm0 0 1 //true
+bitmap_dump bm0
+bitmap_contains bm0 0 2 true
+bitmap_size bm0
+bitmap_count bm0 0 8 true
+
+delete bm0
+quit

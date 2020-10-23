@@ -1,0 +1,27 @@
+create list list0
+dumpdata list0
+
+list_push_back list0 1
+list_front list0
+list_back list0
+list_pop_back list0
+list_pop_front list0
+list_insert list0 0 1
+list_remove list0 0
+list_insert_ordered list0 5
+
+list_empty list0
+list_size list0
+list_max list0
+list_min list0
+
+list_sort list0
+list_swap list0 0 1
+list_shuffle list0
+list_reverse list0
+
+list_splice list0 2 list1 1 4
+
+delete list0
+
+quit
